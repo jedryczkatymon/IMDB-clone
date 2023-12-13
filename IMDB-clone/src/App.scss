@@ -1,0 +1,27 @@
+html {
+    scroll-behavior: smooth;
+    background-color: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav {
+    height: 3.5rem;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    bottom: 0;
+    text-align: center;
+}
+
