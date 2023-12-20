@@ -1,14 +1,12 @@
-import IMDb from '../assets/IMDb.png'
-import Menu from './Menu'
+import Logo from './Logo'
 import '../styles/Navbar/Navbar.css'
+import Menu from './Menu'
 
 const Navbar = () => {
     return (
         <>
-            <a href="/index.html">
-                <img src={IMDb}></img>
-                <Menu />
-            </a>
+            <Logo />
+            <Menu />
         </>
     )
 }

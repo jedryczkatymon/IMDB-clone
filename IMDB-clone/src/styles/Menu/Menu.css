@@ -1,0 +1,157 @@
+button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  margin: auto 0.85rem auto 0.85rem;
+  padding: 10px 17px;
+  height: 30px;
+  border-radius: 6%;
+}
+button:hover {
+  background-color: #252525;
+}
+button img {
+  width: 18px;
+}
+button p {
+  margin-left: 0.5rem;
+  font-size: 14px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1F1F1F;
+  overflow-y: hidden;
+  transition: 0.23s;
+}
+.overlay .overlay-nav {
+  display: flex;
+  justify-content: center;
+  gap: 45rem;
+  margin-top: 2.25rem;
+}
+.overlay .overlay-nav img {
+  width: 100px;
+}
+.overlay .overlay-nav a {
+  height: 31.3px;
+}
+.overlay .overlay-content {
+  position: relative;
+  width: 100%;
+  margin: auto auto auto auto;
+}
+.overlay .overlay-content .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay .overlay-content .container .parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 7rem;
+  grid-row-gap: 0px;
+}
+.overlay .overlay-content .container .parent h2 {
+  font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
+}
+.overlay .overlay-content .container .parent .div1:before, .overlay .overlay-content .container .parent .div2:before, .overlay .overlay-content .container .parent .div3:before, .overlay .overlay-content .container .parent .div4:before, .overlay .overlay-content .container .parent .div5:before, .overlay .overlay-content .container .parent .div6:before {
+  position: absolute;
+  left: -40px;
+  color: #F4C519;
+}
+.overlay .overlay-content .container .parent .div1 {
+  grid-area: 1/1/3/2;
+  position: relative;
+}
+.overlay .overlay-content .container .parent .div1:before {
+  content: url(../../assets/movies.svg);
+}
+.overlay .overlay-content .container .parent .div2 {
+  grid-area: 4/1/5/2;
+  position: relative;
+}
+.overlay .overlay-content .container .parent .div2:before {
+  content: url(../../assets/celebs.svg);
+}
+.overlay .overlay-content .container .parent .div3 {
+  grid-area: 1/2/3/3;
+  position: relative;
+}
+.overlay .overlay-content .container .parent .div3:before {
+  content: url(../../assets/tv-shows.svg);
+}
+.overlay .overlay-content .container .parent .div4 {
+  grid-area: 3/2/4/3;
+  position: relative;
+}
+.overlay .overlay-content .container .parent .div4:before {
+  content: url(../../assets/watch.svg);
+}
+.overlay .overlay-content .container .parent .div5 {
+  grid-area: 1/3/3/4;
+  position: relative;
+}
+.overlay .overlay-content .container .parent .div5:before {
+  content: url(../../assets/awards&events.svg);
+}
+.overlay .overlay-content .container .parent .div6 {
+  grid-area: 4/3/5/4;
+  position: relative;
+}
+.overlay .overlay-content .container .parent .div6:before {
+  content: url(../../assets/community.svg);
+}
+.overlay .overlay-content .container .parent .div1,
+.overlay .overlay-content .container .parent .div3,
+.overlay .overlay-content .container .parent .div5 {
+  margin-top: 2rem;
+}
+.overlay .overlay-content .container .parent .div2,
+.overlay .overlay-content .container .parent .div4,
+.overlay .overlay-content .container .parent .div6 {
+  margin-top: -2rem;
+}
+.overlay .overlay-content .container .parent li {
+  margin-top: 1rem;
+}
+.overlay .overlay-content .container .parent li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.overlay .closebtn {
+  color: #000000;
+  background-color: #F4C519;
+  font-size: 30px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.overlay .closebtn:hover {
+  background-color: #E1B517;
+}
+.overlay .closebtn:active {
+  background-color: #997B14;
+}
+@media screen and (max-height: 450px) {
+  .overlay .overlay {
+    overflow-y: auto;
+  }
+  .overlay .overlay a {
+    font-size: 20px;
+  }
+  .overlay .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}/*# sourceMappingURL=Menu.css.map */

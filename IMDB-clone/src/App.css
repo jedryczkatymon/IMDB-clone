@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(../Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto Medium";
+  src: url(../Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url(../Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "Roboto Thin";
+  src: url(../Roboto-Thin.ttf);
+}
 html {
   scroll-behavior: smooth;
   background-color: #000000;
@@ -7,9 +27,10 @@ html {
   margin: 0;
   padding: 0;
   position: relative;
-  font-family: sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   text-decoration: none;
   list-style: none;
+  border: none;
 }
 
 nav {
