@@ -1,0 +1,26 @@
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 30;
+  
+  #searchbar {
+    height: 32px;
+
+    .searchInput {
+      min-width: 25rem;
+      height: 32px;
+      background-color: #FFFFFF;
+      color: #000000;
+      padding-left: 0.5rem;
+    }
+
+    .searchButton {
+      margin: auto 0 auto 0;
+      border-radius: 0 2px 2px 0;
+      background-color: #FFFFFF;
+      color: #000000;
+    }
+  }
+}
