@@ -73,21 +73,21 @@ button p {
   position: relative;
 }
 .overlay .overlay-content .container .parent .div1:before {
-  content: url(../../assets/movies.svg);
+  content: url(../../assets/movies-menu.svg);
 }
 .overlay .overlay-content .container .parent .div2 {
   grid-area: 4/1/5/2;
   position: relative;
 }
 .overlay .overlay-content .container .parent .div2:before {
-  content: url(../../assets/celebs.svg);
+  content: url(../../assets/celebs-menu.svg);
 }
 .overlay .overlay-content .container .parent .div3 {
   grid-area: 1/2/3/3;
   position: relative;
 }
 .overlay .overlay-content .container .parent .div3:before {
-  content: url(../../assets/tv-shows.svg);
+  content: url(../../assets/tv-shows-menu.svg);
 }
 .overlay .overlay-content .container .parent .div4 {
   grid-area: 3/2/4/3;

@@ -81,7 +81,7 @@ button {
           grid-area: 1 / 1 / 3 / 2;
           position: relative;
           &:before {
-            content: url(../../assets/movies.svg);
+            content: url(../../assets/movies-menu.svg);
           }
         }
 
@@ -89,7 +89,7 @@ button {
           grid-area: 4 / 1 / 5 / 2;
           position: relative;
           &:before {
-            content: url(../../assets/celebs.svg);
+            content: url(../../assets/celebs-menu.svg);
           }
         }
 
@@ -97,7 +97,7 @@ button {
           grid-area: 1 / 2 / 3 / 3;
           position: relative;
           &:before {
-            content: url(../../assets/tv-shows.svg);
+            content: url(../../assets/tv-shows-menu.svg);
           }
         }
 
