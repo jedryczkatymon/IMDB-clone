@@ -11,6 +11,7 @@ import celebs from "../assets/celebs.svg";
 import companies from "../assets/companies.svg";
 import keywords from "../assets/keywords.svg";
 import advancedSearch from "../assets/advanced-search.svg";
+import { ReactSVG } from 'react-svg';
 
 const options = [
     { value: 'all', label: 'All', icon: magnifyingGlass },
@@ -93,7 +94,8 @@ const SearchBar = () => {
 
     const Option = (props) => (
         <components.Option {...props} className="option">
-            <img src={props.data.icon} className="icon" />
+            {/* <img src={props.data.icon} className="icon" /> */}
+            <ReactSVG src={props.data.icon} className={`icon ${props.isSelected ? 'iconYellow' : 'iconWhite'}`} />
             {props.data.label}
         </components.Option>
     );
@@ -121,16 +123,9 @@ const SearchBar = () => {
             document.getElementById("container").style.border = "none";
         }
         
-        document.querySelector("#searchbar").addEventListener('click', addBorder);
-        document.querySelector("#select").addEventListener("click", removeBorder)
-        document.querySelector(".menu").addEventListener("click", removeBorder)
-        document.querySelector("main").addEventListener("click", removeBorder)
-        document.querySelector("footer").addEventListener("click", removeBorder)
+        document.querySelector("#searchInput").addEventListener('focus', addBorder);
+        document.querySelector("#searchInput").addEventListener('blur', removeBorder);
 
-
-        return () => {
-            document.getElementById("searchbar").removeEventListener('focus', addBorder);
-        };
     }, []);
 
     return (
@@ -143,6 +138,7 @@ const SearchBar = () => {
                     styles={styles}
                     isSearchable={false}
                     myFontSize="20px"
+                    // menuIsOpen
                     components={{
                         DropdownIndicator,
                         Option,

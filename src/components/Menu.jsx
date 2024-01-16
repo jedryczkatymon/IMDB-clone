@@ -1,5 +1,5 @@
 import Logo from './Logo'
-import Hamburger from '../assets/Hamburger.png'
+import Hamburger from '../assets/hamburger.png'
 import '../styles/Menu/Menu.css'
 
 const Menu = () => {

@@ -38,3 +38,11 @@
 #container #searchbar #searchButton:before {
   content: url(../../assets/magnifying-glass.svg);
 }/*# sourceMappingURL=SearchBar.css.map */
+
+.option:hover .iconWhite svg{
+  fill: #FFFFFF;
+}
+
+.iconYellow svg{
+  fill: #F4C519;
+}
