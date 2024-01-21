@@ -17,7 +17,8 @@ button img {
 button p {
   margin-left: 0.5rem;
   font-size: 14px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
+  font-weight: 600;
 }
 
 .overlay {
@@ -63,7 +64,12 @@ button p {
 .overlay .overlay-content .container .parent h2 {
   font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
 }
-.overlay .overlay-content .container .parent .div1:before, .overlay .overlay-content .container .parent .div2:before, .overlay .overlay-content .container .parent .div3:before, .overlay .overlay-content .container .parent .div4:before, .overlay .overlay-content .container .parent .div5:before, .overlay .overlay-content .container .parent .div6:before {
+.overlay .overlay-content .container .parent .div1:before,
+.overlay .overlay-content .container .parent .div2:before,
+.overlay .overlay-content .container .parent .div3:before,
+.overlay .overlay-content .container .parent .div4:before,
+.overlay .overlay-content .container .parent .div5:before,
+.overlay .overlay-content .container .parent .div6:before {
   position: absolute;
   left: -40px;
   color: #F4C519;

@@ -45,7 +45,7 @@ const styles = {
     }),
     menuList: (provided) => ({
         ...provided,
-        minHeight: "22.6rem"
+        minHeight: "22.6rem",
     }),
     option: (provided, state) => ({
         ...provided,
@@ -61,7 +61,9 @@ const styles = {
     }),
     singleValue: (provided) => ({
         ...provided,
-        fontSize: "14px",
+        fontSize: "15px",
+        fontFamily: "'Roboto-Bold', Helvetica, Arial, sans-serif",
+        fontWeight: 600,
         padding: "auto auto auto 0.1rem"
     }),
     dropdownIndicator: (provided, state) => ({

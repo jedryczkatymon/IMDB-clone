@@ -3,6 +3,7 @@ import '../styles/Navbar/Navbar.css'
 import Menu from './Menu'
 import SearchBar from './SearchBar'
 import IMDbPro from './IMDbPro'
+import Watchlist from './Watchlist'
 
 const Navbar = () => {
     return (
@@ -11,6 +12,7 @@ const Navbar = () => {
             <Menu />
             <SearchBar />
             <IMDbPro />
+            <Watchlist />
         </>
     )
 }

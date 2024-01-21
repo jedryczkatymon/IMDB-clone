@@ -1,5 +1,4 @@
 import IMDbProLogo from "../assets/IMDbPro.png"
-import IMDbProImg from "../assets/IMDbProImg.png"
 import line from "../assets/line.png"
 import "../styles/IMDbPro/IMDbPro.css"
 

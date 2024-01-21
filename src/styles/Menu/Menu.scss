@@ -19,7 +19,8 @@ button {
   p {
     margin-left: 0.5rem;
     font-size: 14px;
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto-Bold', Helvetica, Arial, sans-serif;
+    font-weight: 600;
   }
 }
 
@@ -33,7 +34,7 @@ button {
   background-color: #1F1F1F;
   overflow-y: hidden;
   transition: 0.23s;
-  
+
   .overlay-nav {
     display: flex;
     justify-content: center;
@@ -43,11 +44,12 @@ button {
     img {
       width: 100px;
     }
-  
+
     a {
       height: 31.3px;
-    }  
+    }
   }
+
   .overlay-content {
     position: relative;
     width: 100%;
@@ -69,10 +71,15 @@ button {
           font-family: 'Roboto-Bold', Helvetica, Arial, sans-serif;
         }
 
-        .div1, .div2, .div3, .div4, .div5, .div6 {
+        .div1,
+        .div2,
+        .div3,
+        .div4,
+        .div5,
+        .div6 {
           &:before {
             position: absolute;
-            left:-40px;
+            left: -40px;
             color: #F4C519;
           }
         }
@@ -80,6 +87,7 @@ button {
         .div1 {
           grid-area: 1 / 1 / 3 / 2;
           position: relative;
+
           &:before {
             content: url(../../assets/movies-menu.svg);
           }
@@ -88,6 +96,7 @@ button {
         .div2 {
           grid-area: 4 / 1 / 5 / 2;
           position: relative;
+
           &:before {
             content: url(../../assets/celebs-menu.svg);
           }
@@ -96,6 +105,7 @@ button {
         .div3 {
           grid-area: 1 / 2 / 3 / 3;
           position: relative;
+
           &:before {
             content: url(../../assets/tv-shows-menu.svg);
           }
@@ -104,6 +114,7 @@ button {
         .div4 {
           grid-area: 3 / 2 / 4 / 3;
           position: relative;
+
           &:before {
             content: url(../../assets/watch.svg);
 
@@ -113,6 +124,7 @@ button {
         .div5 {
           grid-area: 1 / 3 / 3 / 4;
           position: relative;
+
           &:before {
             content: url(../../assets/awards&events.svg);
           }
@@ -121,6 +133,7 @@ button {
         .div6 {
           grid-area: 4 / 3 / 5 / 4;
           position: relative;
+
           &:before {
             content: url(../../assets/community.svg);
           }
@@ -140,6 +153,7 @@ button {
 
         li {
           margin-top: 1rem;
+
           &:hover {
             cursor: pointer;
             text-decoration: underline;
