@@ -6,7 +6,7 @@ const IMDbPro = () => {
     return (
         <>
             <button className='IMDbProMenu'>
-                <img id="IMDbProLogo" src={IMDbProLogo}></img>
+                <img id="IMDbProLogo icon" src={IMDbProLogo}></img>
             </button>
             <img className="line" src={line}/>
         </>

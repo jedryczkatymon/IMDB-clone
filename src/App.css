@@ -44,6 +44,26 @@ nav {
   justify-content: center;
   align-items: center;
 }
+nav .menu, nav .IMDbProMenu, nav .watchlist, nav .signin {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  height: 32px;
+  border-radius: 7px;
+}
+nav .menu:hover, nav .IMDbProMenu:hover, nav .watchlist:hover, nav .signin:hover {
+  background-color: #252525;
+}
+nav .menu #icon, nav .IMDbProMenu #icon, nav .watchlist #icon, nav .signin #icon {
+  width: 25px;
+}
+nav .menu p, nav .IMDbProMenu p, nav .watchlist p, nav .signin p {
+  margin-left: 0.5rem;
+  font-size: 14px;
+  font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
 
 footer {
   bottom: 0;

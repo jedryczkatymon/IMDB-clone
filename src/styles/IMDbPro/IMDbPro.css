@@ -1,16 +1,7 @@
 .IMDbProMenu {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #121212;
   margin: auto 0.85rem auto 0.5rem;
   padding: 20px;
   width: 100px;
-  height: 38px;
-  border-radius: 7px;
-}
-.IMDbProMenu:hover {
-  background-color: #252525;
 }
 .IMDbProMenu #IMDbProLogo {
   transform: scale(3.5);

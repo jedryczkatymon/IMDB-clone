@@ -1,24 +1,9 @@
-button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #121212;
+.menu {
   margin: auto 0.85rem auto 0.85rem;
   padding: 10px 17px;
-  height: 32px;
-  border-radius: 7px;
 }
-button:hover {
-  background-color: #252525;
-}
-button img {
-  width: 18px;
-}
-button p {
-  margin-left: 0.5rem;
-  font-size: 14px;
-  font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
-  font-weight: 600;
+.menu img {
+  width: 18px !important;
 }
 
 .overlay {
