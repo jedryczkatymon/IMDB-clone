@@ -5,20 +5,20 @@ import '../styles/Menu/Menu.css'
 const Menu = () => {
 
     function openNav() {
-        document.getElementById("myNav").style.height = "100%";
+        document.getElementById("nav").style.height = "100%";
         document.getElementsByClassName("overlay-content").style.opacity = "1";
         document.getElementsByClassName("overlay-nav").style.opacity = "1";
     }
 
     function closeNav() {
-        document.getElementById("myNav").style.height = "0%";
+        document.getElementById("nav").style.height = "0%";
         document.getElementsByClassName("overlay-content").style.opacity = "0";
         document.getElementsByClassName("overlay-nav").style.opacity = "0";
     }
 
     return (
         <>
-            <div id="myNav" className="overlay">
+            <div id="nav" className="overlay">
                 <div className="overlay-nav">
                     <Logo />
                     <button className="closebtn" onClick={closeNav}>

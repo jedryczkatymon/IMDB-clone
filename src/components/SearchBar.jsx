@@ -45,7 +45,7 @@ const styles = {
     }),
     menuList: (provided) => ({
         ...provided,
-        minHeight: "20.75rem"
+        minHeight: "22.6rem"
     }),
     option: (provided, state) => ({
         ...provided,
@@ -57,7 +57,7 @@ const styles = {
             backgroundColor: '#676767'
         },
         cursor: "pointer",
-        fontSize: state.selectProps.myFontSize,
+        fontSize: "20px",
     }),
     singleValue: (provided) => ({
         ...provided,
@@ -94,7 +94,6 @@ const SearchBar = () => {
 
     const Option = (props) => (
         <components.Option {...props} className="option">
-            {/* <img src={props.data.icon} className="icon" /> */}
             <ReactSVG src={props.data.icon} className={`icon ${props.isSelected ? 'iconYellow' : 'iconWhite'}`} />
             {props.data.label}
         </components.Option>
@@ -137,8 +136,7 @@ const SearchBar = () => {
                     options={options}
                     styles={styles}
                     isSearchable={false}
-                    myFontSize="20px"
-                    // menuIsOpen
+                    blurInputOnSelect
                     components={{
                         DropdownIndicator,
                         Option,

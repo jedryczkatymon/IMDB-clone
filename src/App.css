@@ -32,6 +32,9 @@ html {
   list-style: none;
   border: none;
   outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 nav {

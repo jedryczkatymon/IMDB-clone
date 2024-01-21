@@ -4,8 +4,15 @@
   .option {
     display: flex;
     align-items: center;
+    .option:hover .iconWhite svg{
+      fill: #FFFFFF;
+    }
+    .iconYellow svg{
+      fill: #F4C519;
+    }
     .icon {
       width: 30px;
+      margin-top: 5px;
       margin-right: 1rem;
     }
   }
