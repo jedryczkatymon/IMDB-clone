@@ -5,6 +5,7 @@ import SearchBar from './SearchBar'
 import IMDbPro from './IMDbPro'
 import Watchlist from './Watchlist'
 import SignIn from './SignIn'
+import Languages from './Languages'
 
 const Navbar = () => {
     return (
@@ -15,6 +16,7 @@ const Navbar = () => {
             <IMDbPro />
             <Watchlist />
             <SignIn />
+            <Languages />
         </>
     )
 }

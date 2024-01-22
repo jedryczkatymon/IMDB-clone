@@ -49,7 +49,7 @@ nav .menu, nav .IMDbProMenu, nav .watchlist, nav .signin {
   justify-content: center;
   align-items: center;
   background-color: #121212;
-  height: 32px;
+  height: 38px !important;
   border-radius: 7px;
 }
 nav .menu:hover, nav .IMDbProMenu:hover, nav .watchlist:hover, nav .signin:hover {

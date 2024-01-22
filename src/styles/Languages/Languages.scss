@@ -1,0 +1,31 @@
+.option {
+
+    label {
+        display: inline-flex;
+        align-items: center;
+        gap: 1rem;
+        height: 2rem;
+        font-size: 16px;
+        cursor: pointer;
+
+        input {
+            width: 0.9rem;
+            height: 0.9rem;
+            margin-left: 0.5rem;
+            appearance: none;
+            -webkit-appearance: none;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        input:not(:checked) {
+            outline: 2px solid #FFFFFF;
+        }
+    
+        input:checked {
+            border: 2.8px solid #1F1F1F;
+            background: #F4C519;
+            outline: 2px solid #F4C519;
+        }
+    }
+}

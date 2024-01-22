@@ -43,5 +43,6 @@
   cursor: pointer;
 }
 #container #searchbar #searchButton:before {
+  padding: 10px;
   content: url(../../assets/magnifying-glass.svg);
 }/*# sourceMappingURL=SearchBar.css.map */

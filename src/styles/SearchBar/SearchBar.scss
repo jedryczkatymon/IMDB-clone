@@ -38,8 +38,9 @@
       background-color: #FFFFFF;
       color: #000000;
       height: 38px;
-      cursor: pointer;
+      cursor: pointer; 
       &:before {
+        padding: 10px;
         content: url(../../assets/magnifying-glass.svg);
       }
     }
