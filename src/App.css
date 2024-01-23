@@ -37,14 +37,7 @@ html {
           user-select: none;
 }
 
-nav {
-  height: 3.5rem;
-  background-color: #121212;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-nav .menu, nav .IMDbProMenu, nav .watchlist, nav .signin {
+.menu, .IMDbProMenu, .watchlist, .signin, .yellowbutton {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -52,20 +45,32 @@ nav .menu, nav .IMDbProMenu, nav .watchlist, nav .signin {
   height: 38px !important;
   border-radius: 7px;
 }
-nav .menu:hover, nav .IMDbProMenu:hover, nav .watchlist:hover, nav .signin:hover {
+.menu:hover, .IMDbProMenu:hover, .watchlist:hover, .signin:hover, .yellowbutton:hover {
   background-color: #252525;
 }
-nav .menu #icon, nav .IMDbProMenu #icon, nav .watchlist #icon, nav .signin #icon {
+.menu #icon, .IMDbProMenu #icon, .watchlist #icon, .signin #icon, .yellowbutton #icon {
   width: 25px;
 }
-nav .menu p, nav .IMDbProMenu p, nav .watchlist p, nav .signin p {
+.menu p, .IMDbProMenu p, .watchlist p, .signin p, .yellowbutton p {
   margin-left: 0.5rem;
   font-size: 14px;
   font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
   font-weight: 600;
 }
 
+nav {
+  height: 3.5rem;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 footer {
   bottom: 0;
   text-align: center;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=App.css.map */

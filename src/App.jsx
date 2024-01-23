@@ -1,5 +1,6 @@
-import Navbar from './components/Navbar'
-import './App.css'
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import './App.css';
 
 function App() {
 
@@ -9,10 +10,10 @@ function App() {
         <Navbar />
       </nav>
       <main>
-        <p>dasd</p>
+
       </main>
       <footer>
-        <p>dsa</p>
+        <Footer />
       </footer>
     </>
   )

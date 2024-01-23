@@ -1,0 +1,9 @@
+.yellowbutton {
+    background-color: #F4C519;
+    color: #000000;
+    width: 12rem;
+    padding: 0 0.5rem 0 0;
+    &:hover {
+        background-color: #e1b517;
+    }
+}
