@@ -11,6 +11,7 @@ import celebs from "../assets/celebs.svg";
 import companies from "../assets/companies.svg";
 import keywords from "../assets/keywords.svg";
 import advancedSearch from "../assets/advanced-search.svg";
+import arrow from "../assets/right-arrow.svg";
 import { ReactSVG } from 'react-svg';
 
 const options = [
@@ -20,7 +21,7 @@ const options = [
     { value: 'celebs', label: 'Celebs', icon: celebs },
     { value: 'companies', label: 'Companies', icon: companies },
     { value: 'keywords', label: 'Keywords', icon: keywords },
-    { value: 'advanced-search', label: 'Advanced Search', icon: advancedSearch },
+    { value: 'advanced-search', label: 'Advanced Search', icon: advancedSearch, arrow: arrow, isDisabled: true },
 ];
 
 const styles = {
@@ -40,24 +41,26 @@ const styles = {
     menu: (provided) => ({
         ...provided,
         backgroundColor: "#1F1F1F",
-        width: "15rem",
+        width: "17rem",
         height: "fit-content",
     }),
     menuList: (provided) => ({
         ...provided,
-        minHeight: "22.6rem",
+        minHeight: "22.61rem",
     }),
     option: (provided, state) => ({
         ...provided,
         fontFamily: "'Roboto-Bold', Helvetica, Arial, sans-serif",
         color: state.isSelected ? "#F4C519" : "#FFFFFF",
         backgroundColor: state.isSelected ? "#1F1F1F" : "#1F1F1F",
-        backgroundColor: state.isFocused ? "#313131" : "#1F1F1F",
         '&:active': {
             backgroundColor: '#676767'
         },
         cursor: "pointer",
         fontSize: "20px",
+        "&:last-child": {
+            borderTop: "1.5px solid #313131",
+        }
     }),
     singleValue: (provided) => ({
         ...provided,
@@ -98,6 +101,7 @@ const SearchBar = () => {
         <components.Option {...props} className="option">
             <ReactSVG src={props.data.icon} className={`icon ${props.isSelected ? 'iconYellow' : 'iconWhite'}`} />
             {props.data.label}
+            <ReactSVG src={props.data.arrow} className="arrow"/>
         </components.Option>
     );
 

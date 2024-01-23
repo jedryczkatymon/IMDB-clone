@@ -156,8 +156,7 @@ const Languages = () => {
                     options={groupedOptions}
                     styles={styles}
                     isSearchable={false}
-                    menuIsOpen
-                    blurInputOnSelect
+                    closeMenuOnSelect={false}
                     components={{
                         DropdownIndicator,
                         Option,
