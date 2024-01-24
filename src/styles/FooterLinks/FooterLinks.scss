@@ -1,0 +1,31 @@
+#footerlinks {
+    width: 55%;
+    display: inline-flex;
+    place-self: center;
+    #links {
+        li {
+            display: inline-block;
+            text-align: center;
+            margin: auto 0.2rem;
+            padding: 0.5rem 1rem 0.5rem 1rem;
+
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+
+        .link::after {
+            content: url(../../assets/link.svg);
+            margin-left: 0.3rem;
+        }
+
+        .privacy {
+            display: inline-flex;
+            &::before {
+                content: url(../../assets/privacy.svg);
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+#footerlinks {
+  width: 55%;
+  display: inline-flex;
+  place-self: center;
+}
+#footerlinks #links li {
+  display: inline-block;
+  text-align: center;
+  margin: auto 0.2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+#footerlinks #links li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+#footerlinks #links .link::after {
+  content: url(../../assets/link.svg);
+  margin-left: 0.3rem;
+}
+#footerlinks #links .privacy {
+  display: inline-flex;
+}
+#footerlinks #links .privacy::before {
+  content: url(../../assets/privacy.svg);
+  margin-right: 0.5rem;
+}/*# sourceMappingURL=FooterLinks.css.map */
