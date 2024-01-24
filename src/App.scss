@@ -2,18 +2,22 @@
     font-family: "Roboto";
     src: url(../Roboto-Regular.ttf);
 }
+
 @font-face {
     font-family: "Roboto Bold";
     src: url(../Roboto-Bold.ttf);
 }
+
 @font-face {
     font-family: "Roboto Medium";
     src: url(../Roboto-Medium.ttf);
 }
+
 @font-face {
     font-family: "Roboto Light";
     src: url(../Roboto-Light.ttf);
 }
+
 @font-face {
     font-family: "Roboto Thin";
     src: url(../Roboto-Thin.ttf);
@@ -37,44 +41,51 @@ html {
     user-select: none;
 }
 
-.menu, .IMDbProMenu, .watchlist, .signin, .yellowbutton {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #121212;
-    height: 38px !important;
-    border-radius: 7px;
-
-    &:hover {
-        background-color: #252525;
-    }
-
-    #icon {
-        width: 25px;
-    }
-
-    p {
-        margin-left: 0.5rem;
-        font-size: 14px;
-        font-family: 'Roboto-Bold', Helvetica, Arial, sans-serif;
-        font-weight: 600;
-    }
-}
-
-nav {
-    height: 3.5rem;
-    background-color: #121212;
+.App {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    flex-direction: column;
+    min-height: 100vh;
+    .menu,
+    .IMDbProMenu,
+    .watchlist,
+    .signin,
+    .yellowbutton {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #121212;
+        height: 38px !important;
+        border-radius: 7px;
 
-footer {
-    bottom: 0;
-    text-align: center;
-    height: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        &:hover {
+            background-color: #252525;
+        }
 
+        #icon {
+            width: 25px;
+        }
+
+        p {
+            margin-left: 0.5rem;
+            font-size: 14px;
+            font-family: 'Roboto-Bold', Helvetica, Arial, sans-serif;
+            font-weight: 600;
+        }
+    }
+
+    nav {
+        height: 3.5rem;
+        background-color: #121212;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        margin-top: auto;
+        text-align: center;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+}
