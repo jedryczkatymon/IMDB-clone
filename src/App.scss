@@ -45,6 +45,11 @@ html {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
+    button {
+        cursor: pointer;
+    }
+
     .menu,
     .IMDbProMenu,
     .watchlist,
@@ -79,6 +84,10 @@ html {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    main {
+        height: fit-content;
     }
 
     footer {

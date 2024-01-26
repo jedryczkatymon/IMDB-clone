@@ -42,6 +42,9 @@ html {
   flex-direction: column;
   min-height: 100vh;
 }
+.App button {
+  cursor: pointer;
+}
 .App .menu,
 .App .IMDbProMenu,
 .App .watchlist,
@@ -84,6 +87,10 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.App main {
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .App footer {
   margin-top: auto;
