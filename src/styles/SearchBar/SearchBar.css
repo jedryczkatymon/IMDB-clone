@@ -1,39 +1,45 @@
 #container {
   display: inline-flex;
+  min-width: 43rem;
   border-radius: 9px 9px 9px 9px;
 }
-#container .option {
+#container #select {
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+#container #select .option {
   display: flex;
   align-items: center;
 }
-#container .option:hover {
+#container #select .option:hover {
   background-color: #313131;
 }
-#container .option:hover .iconWhite svg {
+#container #select .option:hover .iconWhite svg {
   fill: #FFFFFF;
 }
-#container .option .iconYellow svg {
+#container #select .option .iconYellow svg {
   fill: #F4C519;
 }
-#container .option .icon {
+#container #select .option .icon {
   width: 30px;
   margin-top: 5px;
   margin-right: 1rem;
 }
-#container .option .arrow {
+#container #select .option .arrow {
   margin-left: 1rem;
   margin-bottom: -0.3rem;
 }
 #container #searchbar {
   height: 38px;
   display: inline-flex;
+  width: 100%;
 }
 #container #searchbar #searchInput {
-  min-width: 37rem;
   height: 38px;
   background-color: #FFFFFF;
   color: #000000;
   padding-left: 0.5rem;
+  width: 100%;
 }
 #container #searchbar #searchInput::-moz-placeholder {
   font-size: 15px;

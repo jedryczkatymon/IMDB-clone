@@ -1,51 +1,61 @@
 #container {
   display: inline-flex;
+  min-width: 43rem;
   border-radius: 9px 9px 9px 9px;
-  .option {
-    display: flex;
-    align-items: center;
-    &:hover {
-      background-color: #313131;
-      .iconWhite svg{
-        fill: #FFFFFF;
+  
+  #select {
+    min-width:  max-content;
+    .option {
+      display: flex;
+      align-items: center;
+      &:hover {
+        background-color: #313131;
+  
+        .iconWhite svg {
+          fill: #FFFFFF;
+        }
       }
-    }
-    .iconYellow svg{
-      fill: #F4C519;
-    }
-    .icon {
-      width: 30px;
-      margin-top: 5px;
-      margin-right: 1rem;
-    }
-    .arrow {
-      margin-left: 1rem;
-      margin-bottom: -0.3rem;
+  
+      .iconYellow svg {
+        fill: #F4C519;
+      }
+  
+      .icon {
+        width: 30px;
+        margin-top: 5px;
+        margin-right: 1rem;
+      }
+  
+      .arrow {
+        margin-left: 1rem;
+        margin-bottom: -0.3rem;
+      }
     }
   }
 
   #searchbar {
     height: 38px;
     display: inline-flex;
-  
+    width: 100%;
     #searchInput {
-      min-width: 37rem;
       height: 38px;
       background-color: #FFFFFF;
       color: #000000;
       padding-left: 0.5rem;
+      width: 100%;
       &::placeholder {
         font-size: 15px;
       }
     }
-  
+
     #searchButton {
       margin: auto 0 auto 0;
       border-radius: 0 7px 7px 0;
       background-color: #FFFFFF;
       color: #000000;
       height: 38px;
-      cursor: pointer; 
+      cursor: pointer;
+
       &:before {
         padding: 10px;
         content: url(../../assets/magnifying-glass.svg);

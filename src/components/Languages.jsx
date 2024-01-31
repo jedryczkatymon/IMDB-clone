@@ -52,6 +52,7 @@ const styles = {
         backgroundColor: "#1F1F1F",
         width: "15rem",
         height: "fit-content",
+        zIndex: "2"
     }),
     menuList: (provided) => ({
         ...provided,
@@ -148,7 +149,7 @@ const Languages = () => {
     };
 
     return (
-        <div id="container">
+        <div id="languages">
             <div id="select">
                 <Select
                     value={selectedOption}

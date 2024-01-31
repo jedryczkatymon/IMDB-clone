@@ -4,10 +4,31 @@
     background-color: #1A1A1A;
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+    .addtowatchlisticon {
+        position: absolute;
+        z-index: 1;
+        fill: #1a1a1ac0;
+        cursor: pointer;
+        &:hover {
+            fill: #373737af;
+        }
+    }
+    .addtowatchlistplus {
+        position: absolute;
+        z-index: 2;
+        top: 5px;
+        left: 3px;
+    }
     .poster {
         width: 12rem;
         height: 17rem;
         background-color: #fff;
+        cursor: pointer;
+        &:hover {
+            filter: brightness(95%)
+        }
     }
     .ratings {
         display: inline-flex;
@@ -35,7 +56,6 @@
     }
     .title {
         margin-left: 0.5rem;
-        margin-bottom: 2rem;
         &:hover {
             cursor: pointer;
             text-decoration: underline;
@@ -53,6 +73,8 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        position: absolute;
+        top: 23.5rem;
         .plus {
             margin-right: 0.25rem;
             margin-top: 0.15rem;
@@ -66,7 +88,9 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        margin-top: 0.75rem;
+        position: absolute;
+        top: 26rem;
+        left: 1.5rem;
         .trailer {
             width: 5rem;
             height: 2.5rem;

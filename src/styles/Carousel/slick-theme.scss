@@ -1,0 +1,39 @@
+.slick-prev,
+.slick-next {
+    position: absolute;
+    display: block;
+    height: 4rem;
+    width: 3rem;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    top: 35%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    border: 0.2px solid #FFFFFF;
+    border-radius: 5px;
+    background-color: #0000007c;
+    outline: none;
+    z-index: 1;
+    fill: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        fill: #F4C519;
+    }
+}
+
+.slick-prev {
+    left: -25px;
+    display: none;
+}
+
+.slick-next {
+    right: -5px;
+}
+
+.slick-disabled {
+    display: none !important;
+}

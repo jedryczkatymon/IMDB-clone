@@ -81,6 +81,61 @@ html {
   font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
   font-weight: 600;
 }
+.App .slider {
+  width: 75vw;
+}
+.App .slider:hover .slick-prev {
+  display: flex;
+}
+.App .section h2 {
+  font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  color: #F4C519;
+  margin-top: 2.5rem;
+  margin-bottom: 2.25rem;
+}
+.App .section .category {
+  margin-bottom: 4rem;
+}
+.App .section .category .category-heading {
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-flex;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.App .section .category .category-heading h3 {
+  font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  position: relative;
+}
+.App .section .category .category-heading h3::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  bottom: 0.15px;
+  display: block;
+  width: 4.5px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: #F4C519;
+}
+.App .section .category .category-heading .next {
+  fill: #FFFFFF;
+  transform: scale(0.85);
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 8px;
+}
+.App .section .category .category-heading:hover .next {
+  fill: #F4C519;
+}
+.App .section .category .category-subheading {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7019607843);
+  margin-bottom: 1.5rem;
+}
 .App nav {
   height: 3.5rem;
   background-color: #121212;
@@ -91,6 +146,10 @@ html {
 .App main {
   height: -moz-fit-content;
   height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .App footer {
   margin-top: auto;

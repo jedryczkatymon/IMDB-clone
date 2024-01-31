@@ -4,11 +4,32 @@
   background-color: #1A1A1A;
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
+  position: relative;
+}
+.moviecard .addtowatchlisticon {
+  position: absolute;
+  z-index: 1;
+  fill: rgba(26, 26, 26, 0.7529411765);
+  cursor: pointer;
+}
+.moviecard .addtowatchlisticon:hover {
+  fill: rgba(55, 55, 55, 0.6862745098);
+}
+.moviecard .addtowatchlistplus {
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+  left: 3px;
 }
 .moviecard .poster {
   width: 12rem;
   height: 17rem;
   background-color: #fff;
+  cursor: pointer;
+}
+.moviecard .poster:hover {
+  filter: brightness(95%);
 }
 .moviecard .ratings {
   display: inline-flex;
@@ -36,7 +57,6 @@
 }
 .moviecard .title {
   margin-left: 0.5rem;
-  margin-bottom: 2rem;
 }
 .moviecard .title:hover {
   cursor: pointer;
@@ -54,6 +74,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 23.5rem;
 }
 .moviecard .addtowatchlist .plus {
   margin-right: 0.25rem;
@@ -67,7 +89,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0.75rem;
+  position: absolute;
+  top: 26rem;
+  left: 1.5rem;
 }
 .moviecard .trailer-moreinfo .trailer {
   width: 5rem;
