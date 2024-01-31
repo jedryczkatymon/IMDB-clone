@@ -1,0 +1,44 @@
+.category .fromyourwatchlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
+}
+.category .fromyourwatchlist .addtowatchlisticon {
+  fill: #2F2F2F;
+  cursor: pointer;
+  z-index: 0;
+  margin-top: 2rem;
+  transform: scale(1.1);
+}
+.category .fromyourwatchlist .addtowatchlistplus {
+  top: -45px;
+  left: 1px;
+}
+.category .fromyourwatchlist h5,
+.category .fromyourwatchlist p {
+  font-size: 1rem;
+}
+.category .fromyourwatchlist h5 {
+  margin-top: -1.25rem;
+  font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
+}
+.category .fromyourwatchlist .addtowatchlist {
+  width: 10.75rem;
+  height: 2.2rem;
+  border-radius: 7px;
+  place-self: center;
+  background-color: #2C2C2C;
+  font-family: "Roboto Bold";
+  letter-spacing: 0.5px;
+  color: #5799F0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.category .fromyourwatchlist .addtowatchlist:hover {
+  cursor: pointer;
+  background-color: #30353D;
+}/*# sourceMappingURL=FromYourWatchlist.css.map */
