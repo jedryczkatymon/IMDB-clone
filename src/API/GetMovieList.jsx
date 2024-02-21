@@ -72,7 +72,13 @@ const GetMovieList = ({ url, categoryTitle, categorySubtitle }) => {
             <Slider {...settings} className="slider">
                 {movieList?.map((movie, i) => {
                     return (
-                        <MovieCard key={i} poster={movie.poster_path} rating={movie.vote_average.toFixed(1)} title={movie.title} name={movie.name} />
+                        <MovieCard
+                            key={i}
+                            poster={movie.poster_path}
+                            rating={movie.vote_average.toFixed(1)}
+                            title={movie.title}
+                            name={movie.name}
+                        />
                     )
                 })}
             </Slider>
