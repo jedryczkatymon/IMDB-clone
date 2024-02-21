@@ -1,0 +1,16 @@
+.actor {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.actor .actorpic {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.actor .actorname {
+  margin-top: 0.75rem;
+}/*# sourceMappingURL=GetActorList.css.map */
