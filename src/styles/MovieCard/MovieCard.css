@@ -127,4 +127,10 @@
 }
 .moviecard .trailer-moreinfo .moreinfo .moreinfoicon {
   margin-top: 0.25rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .moviecard {
+    transform: scale(0.8);
+  }
 }/*# sourceMappingURL=MovieCard.css.map */

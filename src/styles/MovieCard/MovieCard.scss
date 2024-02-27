@@ -6,61 +6,75 @@
     flex-direction: column;
     border-radius: 5px;
     position: relative;
+
     .addtowatchlisticon {
         position: absolute;
         z-index: 1;
         fill: #1a1a1ac0;
         cursor: pointer;
+
         &:hover {
             fill: #373737af;
         }
     }
+
     .addtowatchlistplus {
         position: absolute;
         z-index: 2;
         top: 5px;
         left: 3px;
     }
+
     .poster {
         width: 12rem;
         height: 17rem;
         background-color: #fff;
         cursor: pointer;
+
         &:hover {
             filter: brightness(95%)
         }
     }
+
     .ratings {
         display: inline-flex;
         align-items: center;
+
         .rating {
             color: #BBBBBB;
             margin: 1rem 0.75rem 1rem 0.5rem;
+
             &::before {
                 content: url(../../assets/star.svg);
                 margin-right: 0.25rem;
             }
         }
+
         .addrating {
             background-color: #1A1A1A;
             width: 3rem;
             height: 2.3rem;
             border-radius: 5px;
+
             &:hover {
                 background-color: #2C2C2C;
+
                 .emptystar svg {
                     fill: #FFFFFF;
                 }
             }
         }
     }
+
     .title {
         margin-left: 0.5rem;
+
         &:hover {
             cursor: pointer;
             text-decoration: underline;
         }
     }
+
     .addtowatchlist {
         width: 10.75rem;
         height: 2.2rem;
@@ -75,15 +89,18 @@
         justify-content: center;
         position: absolute;
         top: 23.5rem;
+
         .plus {
             margin-right: 0.25rem;
             margin-top: 0.15rem;
         }
+
         &:hover {
             cursor: pointer;
             background-color: #30353D;
         }
     }
+
     .trailer-moreinfo {
         display: inline-flex;
         align-items: center;
@@ -91,6 +108,7 @@
         position: absolute;
         top: 26rem;
         left: 1.5rem;
+
         .trailer {
             width: 5rem;
             height: 2.5rem;
@@ -102,14 +120,17 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
+
             &:hover {
                 background-color: #2C2C2C;
             }
+
             .play {
                 margin-right: 0.25rem;
                 margin-top: 0.25rem;
             }
         }
+
         .moreinfo {
             border-radius: 50%;
             width: 3rem;
@@ -119,12 +140,20 @@
             align-items: center;
             justify-content: center;
             background-color: #1A1A1A;
+
             &:hover {
                 background-color: #2C2C2C;
             }
+
             .moreinfoicon {
                 margin-top: 0.25rem;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .moviecard {
+        transform: scale(0.8);
     }
 }

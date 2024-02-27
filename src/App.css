@@ -49,33 +49,37 @@ html {
 .App .IMDbProMenu,
 .App .watchlist,
 .App .signin,
-.App .yellowbutton {
+.App .yellowbuttonbigger,
+.App .yellowbuttonsmaller {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   background-color: #121212;
-  height: 38px !important;
+  height: 2rem;
   border-radius: 7px;
 }
 .App .menu:hover,
 .App .IMDbProMenu:hover,
 .App .watchlist:hover,
 .App .signin:hover,
-.App .yellowbutton:hover {
+.App .yellowbuttonbigger:hover,
+.App .yellowbuttonsmaller:hover {
   background-color: #252525;
 }
 .App .menu #icon,
 .App .IMDbProMenu #icon,
 .App .watchlist #icon,
 .App .signin #icon,
-.App .yellowbutton #icon {
+.App .yellowbuttonbigger #icon,
+.App .yellowbuttonsmaller #icon {
   width: 25px;
 }
 .App .menu p,
 .App .IMDbProMenu p,
 .App .watchlist p,
 .App .signin p,
-.App .yellowbutton p {
+.App .yellowbuttonbigger p,
+.App .yellowbuttonsmaller p {
   margin-left: 0.5rem;
   font-size: 14px;
   font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
@@ -87,12 +91,60 @@ html {
 .App .slider:hover .slick-prev {
   display: flex;
 }
+@media only screen and (max-width: 1300px) {
+  .App .slider {
+    width: 92vw;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .App .slider {
+    width: 92vw;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .App .slider {
+    width: 93vw;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .App .slider {
+    width: 95vw;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .App .slider {
+    width: 90vw;
+    margin-top: -2rem;
+    margin-bottom: -5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .App .slider {
+    width: 100vw;
+    margin-left: -0.5rem;
+    margin-top: -3rem;
+    margin-bottom: -4rem;
+  }
+}
 .App .section h2 {
   font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
   font-size: 2rem;
   color: #F4C519;
   margin-top: 2.5rem;
   margin-bottom: 2.25rem;
+}
+@media only screen and (max-width: 600px) {
+  .App .section h2 {
+    margin-left: 1.5rem;
+  }
 }
 .App .section .category {
   margin-bottom: 4rem;
@@ -135,6 +187,11 @@ html {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.7019607843);
   margin-bottom: 1.5rem;
+}
+@media only screen and (max-width: 600px) {
+  .App .section .category {
+    margin-left: 1.5rem;
+  }
 }
 .App nav {
   height: 3.5rem;

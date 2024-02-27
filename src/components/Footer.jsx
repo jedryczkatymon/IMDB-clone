@@ -7,7 +7,7 @@ import CompanyInfo from "./CompanyInfo"
 const Footer = () => {
     return (
         <>
-            <YellowButton />
+            <YellowButton classname="yellowbuttonbigger" text="Sign in for more access"/>
             <SocialMedia />
             <FooterLinks />
             <AmazonLogo />

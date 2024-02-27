@@ -3,6 +3,7 @@
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
+
     .actorpic {
         width: 11rem;
         height: 11rem;
@@ -12,5 +13,13 @@
 
     .actorname {
         margin-top: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .actor {
+        transform: scale(0.8);
+        margin-top: 1rem;
+        margin-bottom: 2rem;
     }
 }

@@ -13,4 +13,12 @@
 }
 .actor .actorname {
   margin-top: 0.75rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .actor {
+    transform: scale(0.8);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
 }/*# sourceMappingURL=GetActorList.css.map */
