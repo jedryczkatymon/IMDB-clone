@@ -1,4 +1,10 @@
 .watchlist {
   margin: auto 0rem auto 0.85rem;
   padding: 10px 15px 10px 12px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .watchlist {
+    display: none !important;
+  }
 }/*# sourceMappingURL=Watchlist.css.map */

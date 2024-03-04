@@ -1,4 +1,4 @@
-.option label {
+#languages .option label {
   display: inline-flex;
   align-items: center;
   gap: 1rem;
@@ -6,7 +6,7 @@
   font-size: 16px;
   cursor: pointer;
 }
-.option label input {
+#languages .option label input {
   width: 0.9rem;
   height: 0.9rem;
   margin-left: 0.5rem;
@@ -16,11 +16,17 @@
   border-radius: 50%;
   cursor: pointer;
 }
-.option label input:not(:checked) {
+#languages .option label input:not(:checked) {
   outline: 2px solid #FFFFFF;
 }
-.option label input:checked {
+#languages .option label input:checked {
   border: 2.8px solid #1F1F1F;
   background: #F4C519;
   outline: 2px solid #F4C519;
+}
+
+@media only screen and (max-width: 1280px) {
+  #languages {
+    display: none !important;
+  }
 }/*# sourceMappingURL=Languages.css.map */

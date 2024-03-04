@@ -30,7 +30,7 @@ const styles = {
         width: "fit-content",
         backgroundColor: "#FFFFFF",
         borderRadius: "7px 0 0 7px",
-        height: "30px",
+        height: "2rem",
         border: "none",
         borderRight: "1.5px solid #B2B2B2",
         boxShadow: "none",

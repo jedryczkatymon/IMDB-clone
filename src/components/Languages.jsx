@@ -46,6 +46,7 @@ const styles = {
         '&:hover': {
             backgroundColor: '#252525'
         },
+
     }),
     menu: (provided) => ({
         ...provided,
@@ -118,6 +119,11 @@ const Languages = () => {
     const handleChange = (value) => {
         setSelectedOption(value);
     };
+
+    const mediaQuery = window.matchMedia('(max-width: 1024px)')
+    if (mediaQuery.matches) {
+        
+    }
 
     const SingleValue = ({ children, ...props }) => (
         <components.SingleValue {...props}>

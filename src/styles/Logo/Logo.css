@@ -4,4 +4,10 @@ img {
 
 a {
   height: 31.3px;
+}
+
+@media only screen and (max-width: 950px) {
+  img {
+    margin-right: 0.85rem;
+  }
 }/*# sourceMappingURL=Logo.css.map */

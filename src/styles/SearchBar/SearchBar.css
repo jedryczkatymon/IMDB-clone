@@ -47,6 +47,13 @@
 #container #searchbar #searchInput::placeholder {
   font-size: 15px;
 }
+@media only screen and (max-width: 845px) {
+  #container #searchbar #searchInput {
+    width: auto;
+    max-width: 100rem;
+    min-width: 15rem;
+  }
+}
 #container #searchbar #searchButton {
   margin: auto 0 auto 0;
   border-radius: 0 7px 7px 0;
@@ -58,4 +65,10 @@
 #container #searchbar #searchButton:before {
   padding: 10px;
   content: url(../../assets/magnifying-glass.svg);
+}
+
+@media only screen and (max-width: 1280px) {
+  #container {
+    min-width: 28rem;
+  }
 }/*# sourceMappingURL=SearchBar.css.map */

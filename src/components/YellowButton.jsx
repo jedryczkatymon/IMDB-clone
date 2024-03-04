@@ -1,10 +1,10 @@
 import "../styles/YellowButton/YellowButton.css"
 
-const YellowButton = () => {
+const YellowButton = ({text, classname}) => {
     return (
         <>
-            <button className='yellowbutton'>
-                <p>Sign in for more access</p>
+            <button className={classname}>
+                <p>{text}</p>
             </button>
         </>
     )

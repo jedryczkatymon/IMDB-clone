@@ -1,11 +1,23 @@
-.yellowbutton {
+.yellowbuttonbigger, .yellowbuttonsmaller {
   background-color: #F4C519 !important;
   color: #000000;
-  width: 15rem;
-  min-height: 2.5rem !important;
-  padding: 0 0.5rem 0 0;
   place-self: center;
 }
-.yellowbutton:hover {
+.yellowbuttonbigger:hover, .yellowbuttonsmaller:hover {
   background-color: #E1B517 !important;
+}
+
+.yellowbuttonsmaller {
+  width: 5rem;
+  padding: 0 0.5rem 0 0;
+}
+
+@media only screen and (min-width: 1280px) {
+  .yellowbuttonsmaller {
+    display: none !important;
+  }
+}
+.yellowbuttonbigger {
+  max-width: 15rem;
+  padding: 0 2.5rem 0 2rem;
 }/*# sourceMappingURL=YellowButton.css.map */
