@@ -82,6 +82,9 @@ html {
   font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
   font-weight: 600;
 }
+.App .yellowbuttonsmaller {
+  min-width: 5rem;
+}
 .App .slider {
   width: 75vw;
 }

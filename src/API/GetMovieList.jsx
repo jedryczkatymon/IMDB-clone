@@ -112,6 +112,10 @@ const GetMovieList = ({ url, categoryTitle, categorySubtitle }) => {
     }, [])
     console.log(movieList)
 
+    // useeffect(()=>{
+    //     document.querySelector('.....').style = 'transform(0,0)'
+    // }, [])
+
     return (
         <div className="category">
             <div className="category-heading">

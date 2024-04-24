@@ -19,7 +19,7 @@ const Navbar = () => {
             <Watchlist />
             <SignIn />
             <Languages />
-            <YellowButton classname="yellowbuttonsmaller" text="Use app"/>
+            <YellowButton classname="yellowbuttonsmaller" text="Use app" />
         </>
     )
 }
