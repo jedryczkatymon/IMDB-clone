@@ -19,6 +19,7 @@
 .category .fromyourwatchlist h5,
 .category .fromyourwatchlist p {
   font-size: 1rem;
+  text-align: center;
 }
 .category .fromyourwatchlist h5 {
   margin-top: -1.25rem;

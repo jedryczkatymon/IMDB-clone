@@ -10,8 +10,7 @@
   width: 0.9rem;
   height: 0.9rem;
   margin-left: 0.5rem;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   -webkit-appearance: none;
   border-radius: 50%;
   cursor: pointer;

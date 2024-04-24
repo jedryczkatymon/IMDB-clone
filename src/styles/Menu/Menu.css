@@ -1,13 +1,13 @@
-.menu {
+.menubutton {
   margin: auto 0.85rem auto 0.85rem;
   padding: 10px 17px;
 }
-.menu img {
+.menubutton img {
   width: 18px !important;
 }
 
-@media only screen and (max-width: 950px) {
-  .menu {
+@media screen and (max-width: 950px) {
+  .menubutton {
     display: none !important;
   }
 }
@@ -138,16 +138,9 @@
 .overlay .closebtn:active {
   background-color: #997B14;
 }
-@media screen and (max-height: 450px) {
-  .overlay .overlay {
-    overflow-y: auto;
-  }
-  .overlay .overlay a {
-    font-size: 20px;
-  }
-  .overlay .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+
+@media screen and (max-width: 950px) {
+  .overlay {
+    display: none;
   }
 }/*# sourceMappingURL=Menu.css.map */

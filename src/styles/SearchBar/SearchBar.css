@@ -1,10 +1,9 @@
 #container {
   display: inline-flex;
-  min-width: 43rem;
+  min-width: 45.5rem;
   border-radius: 9px 9px 9px 9px;
 }
 #container #select {
-  min-width: -moz-max-content;
   min-width: max-content;
 }
 #container #select .option {
@@ -29,6 +28,11 @@
   margin-left: 1rem;
   margin-bottom: -0.3rem;
 }
+@media only screen and (max-width: 660px) {
+  #container #select {
+    display: none;
+  }
+}
 #container #searchbar {
   height: 38px;
   display: inline-flex;
@@ -41,17 +45,12 @@
   padding-left: 0.5rem;
   width: 100%;
 }
-#container #searchbar #searchInput::-moz-placeholder {
-  font-size: 15px;
-}
 #container #searchbar #searchInput::placeholder {
   font-size: 15px;
 }
-@media only screen and (max-width: 845px) {
+@media only screen and (max-width: 660px) {
   #container #searchbar #searchInput {
-    width: auto;
-    max-width: 100rem;
-    min-width: 15rem;
+    display: none;
   }
 }
 #container #searchbar #searchButton {
@@ -66,8 +65,43 @@
   padding: 10px;
   content: url(../../assets/magnifying-glass.svg);
 }
+@media only screen and (max-width: 660px) {
+  #container #searchbar #searchButton {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (min-width: 400px) and (max-width: 450px) {
+  #container {
+    min-width: 5rem;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 500px) {
+  #container {
+    min-width: 8rem;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 560px) {
+  #container {
+    min-width: 10rem;
+  }
+}
+@media only screen and (min-width: 560px) and (max-width: 660px) {
+  #container {
+    min-width: 13rem;
+  }
+}
+@media only screen and (min-width: 660px) and (max-width: 730px) {
+  #container {
+    min-width: 0rem;
+  }
+}
+@media only screen and (min-width: 730px) and (max-width: 810px) {
+  #container {
+    min-width: 20rem;
+  }
+}
+@media only screen and (min-width: 810px) and (max-width: 1280px) {
   #container {
     min-width: 28rem;
   }

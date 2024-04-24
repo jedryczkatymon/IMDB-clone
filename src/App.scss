@@ -44,13 +44,12 @@ html {
 .App {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 
     button {
         cursor: pointer;
     }
 
-    .menu,
+    .menubutton,
     .IMDbProMenu,
     .watchlist,
     .signin,
@@ -131,7 +130,16 @@ html {
 
     @media only screen and (max-width: 600px) {
         .slider {
-            width: 100vw;
+            width: 95vw;
+            margin-left: -0.5rem;
+            margin-top: -3rem;
+            margin-bottom: -4rem;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .slider {
+            width: 95vw;
             margin-left: -0.5rem;
             margin-top: -3rem;
             margin-bottom: -4rem;

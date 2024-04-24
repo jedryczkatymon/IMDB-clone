@@ -1,32 +1,33 @@
-import "../styles/MenuForMobile/MenuForMobile.css"
 import Hamburger from '../assets/hamburger.png'
-
-function openNav() {
-    document.getElementById("nav").style.width = "30%";
-    document.getElementsByClassName("overlay-content-formobile").style.opacity = "1";
-    document.getElementsByClassName("overlay-nav-formobile").style.opacity = "1";
-}
-
-function closeNav() {
-    document.getElementById("nav").style.width = "0%";
-    document.getElementsByClassName("overlay-content-formobile").style.opacity = "0";
-    document.getElementsByClassName("overlay-nav-formobile").style.opacity = "0";
-}
+import '../styles/MenuForMobile/MenuForMobile.css'
 
 const MenuForMobile = () => {
+
+    function openNavMobile() {
+        document.getElementById("nav-mobile").style.display = "block";
+        document.getElementById("nav-mobile").style.width = "33%";
+    }
+
+    function closeNavMobile() {
+        document.getElementById("nav-mobile").style.display = "none";
+
+    }
+
     return (
-        <div id="menuformobile">
-            <div id="nav" className="overlayformobile">
-                <div className="overlay-nav-formobile">
-                    <button className="closebtnformobile" onClick={closeNav}>
+        <>
+            <div id="nav-mobile" className="overlay-mobile">
+                <div className="overlay-nav-mobile">
+                    <button className="closebtn-mobile" onClick={closeNavMobile}>
                         &times;
                     </button>
                 </div>
-                <div className="overlay-content-formobile">
-                    <div className="containerformobile">
-                        <div className="parentformobile">
-                            <div className="div1formobile">
-                                <h2>Movies</h2>
+                <div className="overlay-content-mobile">
+                    <div className="container-mobile">
+                        <div className="parent-mobile">
+                            <details className="div1-mobile">
+                                <summary>
+                                    <h3>Movies</h3>
+                                </summary>
                                 <ul>
                                     <li>Release Calendar</li>
                                     <li>Top 250 Movies</li>
@@ -37,17 +38,21 @@ const MenuForMobile = () => {
                                     <li>Movie News</li>
                                     <li>India Movie Spotlight</li>
                                 </ul>
-                            </div>
-                            <div className="div2formobile">
-                                <h2>Celebs</h2>
+                            </details>
+                            <details className="div2-mobile">
+                                <summary>
+                                    <h3>Celebs</h3>
+                                </summary>
                                 <ul>
                                     <li>Born Today</li>
                                     <li>Most Popular Celebs</li>
                                     <li>Celebrity News</li>
                                 </ul>
-                            </div>
-                            <div className="div3formobile">
-                                <h2>TV Shows</h2>
+                            </details>
+                            <details className="div3-mobile">
+                                <summary>
+                                    <h3>TV Shows</h3>
+                                </summary>
                                 <ul>
                                     <li>What's on TV & Streaming</li>
                                     <li>Top 250 TV Shows</li>
@@ -55,9 +60,11 @@ const MenuForMobile = () => {
                                     <li>Brows TV Shows by Genre</li>
                                     <li>TV News</li>
                                 </ul>
-                            </div>
-                            <div className="div4formobile">
-                                <h2>Watch</h2>
+                            </details>
+                            <details className="div4-mobile">
+                                <summary>
+                                    <h3>Watch</h3>
+                                </summary>
                                 <ul>
                                     <li>What to Watch</li>
                                     <li>Latest Trailers</li>
@@ -65,9 +72,11 @@ const MenuForMobile = () => {
                                     <li>IMDb Picks</li>
                                     <li>IMDb Podcasts</li>
                                 </ul>
-                            </div>
-                            <div className="div5formobile">
-                                <h2>Awards & Events</h2>
+                            </details>
+                            <details className="div5-mobile">
+                                <summary>
+                                    <h3>Awards & Events</h3>
+                                </summary>
                                 <ul>
                                     <li>Oscars</li>
                                     <li>Emmys</li>
@@ -78,25 +87,27 @@ const MenuForMobile = () => {
                                     <li>Festival Central</li>
                                     <li>All Events</li>
                                 </ul>
-                            </div>
-                            <div className="div6formobile">
-                                <h2>Community</h2>
+                            </details>
+                            <details className="div6-mobile">
+                                <summary>
+                                    <h3>Community</h3>
+                                </summary>
                                 <ul>
                                     <li>Help Center</li>
                                     <li>Contributor Zone</li>
                                     <li>Polls</li>
                                 </ul>
-                            </div>
+                            </details>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <button className='menuformobile' onClick={openNav} >
-                <img id="icon" src={Hamburger}></img>
+            <button className='menubuttonmobile' onClick={openNavMobile} >
+                <img id="icon-mobile" src={Hamburger}></img>
             </button>
-        </div>
-    );
+        </>
+    )
 }
 
 export default MenuForMobile;

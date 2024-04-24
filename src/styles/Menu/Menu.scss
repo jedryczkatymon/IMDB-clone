@@ -1,4 +1,4 @@
-.menu {
+.menubutton {
   margin: auto 0.85rem auto 0.85rem;
   padding: 10px 17px;
 
@@ -7,8 +7,8 @@
   }
 }
 
-@media only screen and (max-width: 950px) {
-  .menu {
+@media screen and (max-width: 950px) {
+  .menubutton {
     display: none !important;
   }
 }
@@ -170,19 +170,24 @@
     }
   }
 
-  @media screen and (max-height: 450px) {
-    .overlay {
-      overflow-y: auto;
-    }
+  // @media screen and (max-height: 450px) {
+  //   .overlay {
+  //     overflow-y: auto;
+  //   }
 
-    .overlay a {
-      font-size: 20px
-    }
+  //   .overlay a {
+  //     font-size: 20px
+  //   }
 
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
+  //   .overlay .closebtn {
+  //     font-size: 40px;
+  //     top: 15px;
+  //     right: 35px;
+  //   }
+  // }
+}
+@media screen and (max-width: 950px) {
+  .overlay {
+    display: none;
   }
 }

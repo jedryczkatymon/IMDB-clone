@@ -20,6 +20,12 @@
     height: 38px;
 }
 
+@media only screen and (max-width: 660px) {
+    .line {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 1280px) {
     .line {
         margin: 0rem;

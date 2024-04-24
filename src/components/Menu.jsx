@@ -95,7 +95,7 @@ const Menu = () => {
                 </div>
             </div>
 
-            <button className='menu' onClick={openNav} >
+            <button className='menubutton' onClick={openNav} >
                 <img id="icon" src={Hamburger}></img>
                 <p>Menu</p>
             </button>

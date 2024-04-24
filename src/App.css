@@ -32,20 +32,17 @@ html {
   list-style: none;
   border: none;
   outline: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .App {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 .App button {
   cursor: pointer;
 }
-.App .menu,
+.App .menubutton,
 .App .IMDbProMenu,
 .App .watchlist,
 .App .signin,
@@ -58,7 +55,7 @@ html {
   height: 2rem;
   border-radius: 7px;
 }
-.App .menu:hover,
+.App .menubutton:hover,
 .App .IMDbProMenu:hover,
 .App .watchlist:hover,
 .App .signin:hover,
@@ -66,7 +63,7 @@ html {
 .App .yellowbuttonsmaller:hover {
   background-color: #252525;
 }
-.App .menu #icon,
+.App .menubutton #icon,
 .App .IMDbProMenu #icon,
 .App .watchlist #icon,
 .App .signin #icon,
@@ -74,7 +71,7 @@ html {
 .App .yellowbuttonsmaller #icon {
   width: 25px;
 }
-.App .menu p,
+.App .menubutton p,
 .App .IMDbProMenu p,
 .App .watchlist p,
 .App .signin p,
@@ -128,7 +125,15 @@ html {
 }
 @media only screen and (max-width: 600px) {
   .App .slider {
-    width: 100vw;
+    width: 95vw;
+    margin-left: -0.5rem;
+    margin-top: -3rem;
+    margin-bottom: -4rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .App .slider {
+    width: 95vw;
     margin-left: -0.5rem;
     margin-top: -3rem;
     margin-bottom: -4rem;
@@ -151,7 +156,6 @@ html {
 }
 .App .section .category .category-heading {
   cursor: pointer;
-  width: -moz-fit-content;
   width: fit-content;
   display: inline-flex;
   margin-left: 10px;
@@ -176,7 +180,6 @@ html {
 .App .section .category .category-heading .next {
   fill: #FFFFFF;
   transform: scale(0.85);
-  width: -moz-fit-content;
   width: fit-content;
   margin-left: 8px;
 }
@@ -201,7 +204,6 @@ html {
   align-items: center;
 }
 .App main {
-  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -211,7 +213,6 @@ html {
 .App footer {
   margin-top: auto;
   text-align: center;
-  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   flex-direction: column;
