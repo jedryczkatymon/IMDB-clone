@@ -110,11 +110,6 @@ const GetMovieList = ({ url, categoryTitle, categorySubtitle }) => {
             .then(json => setMovieList(json.results))
             .catch(err => console.error(err));
     }, [])
-    console.log(movieList)
-
-    // useeffect(()=>{
-    //     document.querySelector('.....').style = 'transform(0,0)'
-    // }, [])
 
     return (
         <div className="category">
