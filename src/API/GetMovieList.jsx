@@ -42,13 +42,20 @@ const GetMovieList = ({ url, categoryTitle, categorySubtitle }) => {
         slidesToShow: 6,
         slidesToScroll: 6,
         initialSlide: 0,
+        infinite: true,
         responsive: [
             {
                 breakpoint: 1550,
                 settings: {
                     slidesToShow: 5,
                     slidesToScroll: 5,
-                    initialSlide: 0,
+                }
+            },
+            {
+                breakpoint: 1550,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 5,
                 }
             },
             {
@@ -56,7 +63,6 @@ const GetMovieList = ({ url, categoryTitle, categorySubtitle }) => {
                 settings: {
                     slidesToShow: 4.5,
                     slidesToScroll: 4.5,
-                    initialSlide: 0,
                 }
             },
             {
@@ -64,7 +70,6 @@ const GetMovieList = ({ url, categoryTitle, categorySubtitle }) => {
                 settings: {
                     slidesToShow: 3.5,
                     slidesToScroll: 3.5,
-                    initialSlide: 0,
                 }
             },
             {
@@ -72,7 +77,6 @@ const GetMovieList = ({ url, categoryTitle, categorySubtitle }) => {
                 settings: {
                     slidesToShow: 2.7,
                     slidesToScroll: 2.7,
-                    initialSlide: 0,
                 }
             },
             {
@@ -80,7 +84,6 @@ const GetMovieList = ({ url, categoryTitle, categorySubtitle }) => {
                 settings: {
                     slidesToShow: 2.4,
                     slidesToScroll: 2.4,
-                    initialSlide: 0,
                 }
             },
             {
@@ -88,7 +91,6 @@ const GetMovieList = ({ url, categoryTitle, categorySubtitle }) => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
-                    initialSlide: 0,
                 }
             }
         ]
@@ -110,6 +112,7 @@ const GetMovieList = ({ url, categoryTitle, categorySubtitle }) => {
             .then(json => setMovieList(json.results))
             .catch(err => console.error(err));
     }, [])
+
 
     return (
         <div className="category">

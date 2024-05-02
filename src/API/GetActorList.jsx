@@ -41,7 +41,16 @@ const GetActorList = ({ url, categoryTitle, categorySubtitle }) => {
         prevArrow: <SamplePrevArrow />,
         slidesToShow: 6,
         slidesToScroll: 6,
+        initialSlide: 0,
+        infinite: true,
         responsive: [
+            {
+                breakpoint: 1550,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 5,
+                }
+            },
             {
                 breakpoint: 1550,
                 settings: {
@@ -57,31 +66,31 @@ const GetActorList = ({ url, categoryTitle, categorySubtitle }) => {
                 }
             },
             {
-                breakpoint: 900,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                }
-            },
-            {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 3.5,
-                    slidesToScroll: 3.5
+                    slidesToScroll: 3.5,
                 }
             },
             {
                 breakpoint: 550,
                 settings: {
                     slidesToShow: 2.7,
-                    slidesToScroll: 2.7
+                    slidesToScroll: 2.7,
+                }
+            },
+            {
+                breakpoint: 425,
+                settings: {
+                    slidesToShow: 2.4,
+                    slidesToScroll: 2.4,
                 }
             },
             {
                 breakpoint: 400,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
                 }
             }
         ]
@@ -103,7 +112,6 @@ const GetActorList = ({ url, categoryTitle, categorySubtitle }) => {
             .then(json => setActorList(json.results))
             .catch(err => console.error(err));
     }, [])
-    console.log(actorList)
 
     return (
         <div className="category">
