@@ -70,7 +70,7 @@
 .overlay-mobile .overlay-content-mobile .container-mobile .parent-mobile .div5-mobile,
 .overlay-mobile .overlay-content-mobile .container-mobile .parent-mobile .div6-mobile {
   margin-top: 0.5rem;
-  margin-left: 1rem;
+  margin-left: 4rem;
 }
 .overlay-mobile .overlay-content-mobile .container-mobile .parent-mobile .div1-mobile:before,
 .overlay-mobile .overlay-content-mobile .container-mobile .parent-mobile .div2-mobile:before,
@@ -198,6 +198,6 @@
 }
 @media screen and (max-width: 400px) {
   .overlay-mobile {
-    width: 73% !important;
+    width: 90% !important;
   }
 }/*# sourceMappingURL=MenuForMobile.css.map */

@@ -52,6 +52,7 @@ const styles = {
         ...provided,
         backgroundColor: "#1F1F1F",
         width: "15rem",
+        marginLeft: "-5rem",
         height: "fit-content",
         zIndex: "2"
     }),
